@@ -22,18 +22,33 @@ function Promedio ()
 {var numerouno;
 	var numerodos;
 	var	numerotres;
-	var resultado;
 	var promedio;
-	numerouno=document.getElementById('PrecioUno');
-	numerodos=document.getElementById('PrecioDos');
-	numerotres=document.getElementById('PrecioTres');
+	numerouno=document.getElementById('PrecioUno').value;
+	numerodos=document.getElementById('PrecioDos').value;
+	numerotres=document.getElementById('PrecioTres').value;
 	numerouno=parseInt(numerouno);
 	numerodos=parseInt(numerodos);
-	numerotres=parseInt()
+	numerotres=parseInt(numerotres);
+	promedio=(numerouno+numerodos+numerotres)/3;
+	alert("el promedio es "+promedio);
+
 
 	
 }
 function PrecioFinal () 
 {
-	
+	var numerouno;
+	var	numerodos;
+	var numerotres;
+	var preciofinal;
+	numerouno=document.getElementById('PrecioUno').value;
+	numerodos=document.getElementById('PrecioDos').value;
+	numerotres=document.getElementById('PrecioTres').value;
+	numerouno=parseInt(numerouno);
+	numerodos=parseInt(numerodos);
+	numerotres=parseInt(numerotres);
+	preciofinal=(numerouno+numerodos+numerotres)*1.21;
+	alert("el precio final es "+preciofinal);
+
+
 }
